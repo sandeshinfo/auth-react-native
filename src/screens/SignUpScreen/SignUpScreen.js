@@ -72,13 +72,17 @@ const SignUpScreen = () => {
                     <View style={{
                         display: 'flex',
                         flexDirection: 'row',
-                        justifyContent: 'center',
+                        justifyContent: 'flex-end',
                         alignItems: 'center'
                     }}>
                         <CheckBox
                             checked={true}
-                            checkedColor='blue'
-                            title="" />
+                            containerStyle={{
+                                backgroundColor: 'transparent'
+                            }}
+                            checkedColor='white'
+                        // title="" 
+                        />
                         <Text style={{ color: 'white' }}>Agree to Terms & Conditions</Text>
                     </View>
 
